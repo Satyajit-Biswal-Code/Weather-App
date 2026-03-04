@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+
+  <body>
+    <div class="weather-app">
+      <div class="top-bar">
+        <h2>Weather App</h2>
+        <button id="theme-toggle">🌙 Dark</button>
+      </div>
+
+      <form class="search-form">
+        <input
+          type="text"
+          class="city-input"
+          placeholder="Search city..."
+          required />
+        <button type="submit" class="search-btn">
+          <i class="material-icons">search</i>
+        </button>
+      </form>
+
+      <div class="city-date-section">
+        <h2 class="city">--</h2>
+        <p class="date">--</p>
+      </div>
+
+      <div class="description">Live Weather Data</div>
+      <div class="temp">--°C</div>
+
+      <div class="additional-info">
+        <div class="info-box">
+          <i class="material-icons">air</i>
+          <h3 class="wind-speed">--</h3>
+          <p>Wind</p>
+        </div>
+
+        <div class="info-box">
+          <i class="material-icons">water_drop</i>
+          <h3 class="humidity">--</h3>
+          <p>Humidity</p>
+        </div>
+
+        <div class="info-box">
+          <i class="material-icons">visibility</i>
+          <h3 class="visibility-distance">--</h3>
+          <p>Visibility</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
